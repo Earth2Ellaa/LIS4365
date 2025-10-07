@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Module4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- Header -->
+  <header id="header">
+    <nav class="left">
+      <a href="#menu"><span>Menu</span></a>
+    </nav>
+    <a href="index.html" class="logo">Web Design Technologies</a>
+    <nav class="right">
+      <a href="#" class="button alt">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+    </ul>
+    <ul class="actions vertical">
+      <li><a href="#" class="button fit">Contact</a></li>
+    </ul>
+  </nav>
+
+<!-- Main Section -->
+<section id="main" class="wrapper">
+  <div class="inner">
+    <header class="align-center">
+      <h1>Module 4</h1>
+      <p>Introduction to Photoshop</p>
+    </header>
+
+    <!-- Assignment Image -->
+    <span class="image fit">
+      <img src="pic3.jpg" alt="Assignment 1">
+    </span>
+
+    <!-- Assignment Content -->
+    <h2><i>Content</i></h2>
+	<h3> September 21st : Testing Loops and Using PhotoShop</h3>
+	<img src="pic4.png" alt="Question 1"> <br>
+	
+	<h2>  Fixed Code Outcome </h2>
+	
+	<p> There were missing {, } so once I added them I was able to have the code run properly, the outcome is below </p>
+	
+	<p id="demo">Display the result here.</p>
+	
+	<script>
+		var greeting;
+		var hour = new Date().getHours();
+
+		if (hour < 18) {
+			greeting = "Good day";
+} 		else {
+			greeting = "Good evening";
+}
+
+		document.getElementById("demo").innerHTML = greeting;
+	</script>
+	
+     
+	 <h2> Condition Statements Practice </h2>
+	 <p id="message"><b>Hi my name is Daniella and my concentration is web development. I read many books and my most recent book read was Wild Love by Elsie Silver, I would rate it a 7/10.
+		I love Harry Potter and my house is Ravenclaw.</b></p>
+		
+	<div id="input1">
+		<h4>Is my name Daniella or Danielle?</h4>
+		<button onclick="checkAnswer('Daniella')">Daniella</button>
+		<button onclick="checkAnswer('Danielle')">Danielle</button>
+	</div>
+	
+	<script>
+	
+	function checkAnswer(answer){
+			if(answer == "Daniella"){
+			document.getElementById("input1").innerHTML= "1. Wow you paid attention, thank you!";
+		} else{
+			document.getElementById("input1").innerHTML = "1. Wrong! How rude :(";
+		}
+	}
+
+	</script>
+	
+	<div id="input2">
+		<br>
+		<h4>Like you read above I love books now that I've recently gotten back into it. When was the last time you read a book?</h4>
+		<button onclick="bookQuestion('Less than 12 months')">Less than 12 months</button>
+		<button onclick="bookQuestion('More than 12 months')">More than 12 months</button>
+	</div>
+	
+	<script>
+	
+	function bookQuestion(answer){
+			if(answer == "Less than 12 months"){
+			document.getElementById("input2").innerHTML= "2. I hope you enjoyed it and dive into your next book soon!";
+		} else{
+			document.getElementById("input2").innerHTML= "2. I get it, but you should pick up a book soon!";
+		}
+	}
+</script>
+	
+	<div id="input3">
+		<br>
+		<h4>I need to ask which Harry Potter house are you in? And if you are not into the series, which do you think you would fall into?</h4>
+		<button onclick="house('Gryffindor')">Gryffindor</button>
+		<button onclick="house('Hufflepuff')">Hufflepuff</button>
+		<button onclick="house('Ravenclaw')">Ravenclaw</button>
+		<button onclick="house('Slytherin')">Slytherin</button>
+	</div>
+	
+	<script>
+	
+	function house(answer) {
+		let message = "";
+  
+		if(answer == "Gryffindor") {
+			message = "3. Pretty Basic!";
+	} 	else if(answer == "Hufflepuff") {
+			message = "3. Oh..okay..cute!";
+	} 	else if(answer == "Ravenclaw") {
+			message = "3. The correct house! Welcome in!";
+	} 	else if(answer == "Slytherin") {
+			message = "3. Oh so you think you are 'cool'?";
+	}
+	
+	document.getElementById("input3").innerHTML = message;
+}
+</script>
+
+<h2> Image from Photoshop</h2>
+
+<img src="pic5.jpg" alt="JPG">
+
+</footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+</body>
+</html>
